@@ -1,0 +1,164 @@
+.editor {
+    justify-content: center;
+    gap: 30px;
+}
+
+
+canvas {
+    border: 4px solid rgb(106, 117, 106);
+    border-radius: 13px;
+}
+
+.editor .menu {
+    background-color: rgb(106, 117, 106);
+    width: 534px;
+    height: 555px;
+    border-radius: 13px;
+    padding: 30px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 16.5% 16.5% 35% 22% 13%;
+    grid-template-areas:
+        "line-bar line-bar line-bar line-bar line-bar"
+        ". add-line add-line delete ."
+        "line-tools line-tools line-tools line-tools line-tools"
+        "stickers stickers stickers stickers stickers"
+        "save save . download download"
+    ;
+
+}
+
+.editor button {
+    background-color: var(--clr2);
+    color: var(--clr3);
+    min-height: auto;
+    border-radius: 13px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: inset 0px 10px 0px -4px rgba(237, 240, 249, 0.41), inset 0px -10px 0px -4px rgba(4, 4, 5, 0.41);
+    font-size: 2rem;
+    font-family: poppins;
+    font-weight: 500;
+
+}
+
+.editor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.editor .menu .line-bar {
+    grid-area: line-bar;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    text-align: center;
+    color: var(--clr3);
+    font-size: 1.187rem;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.editor .menu .change-selection {
+    grid-area: change-selection;
+    background-color: var(--clr10);
+}
+
+.editor .menu .change-selection img {
+    -webkit-filter: drop-shadow(3px 3px 0px rgba(4, 4, 5, 0.41));
+    filter: drop-shadow(3px 3px 0px rgba(4, 4, 5, 0.41));
+}
+
+.editor .menu .add-line {
+    grid-area: add-line;
+    background-color: var(--clr13);
+}
+
+.editor .menu .add-line img {
+    -webkit-filter: drop-shadow(3px 3px 0px rgba(4, 4, 5, 0.41));
+    filter: drop-shadow(3px 3px 0px rgba(4, 4, 5, 0.41));
+}
+
+.editor .menu .delete {
+    grid-area: delete;
+    background-color: var(--clr14);
+}
+
+.editor .menu .delete img {
+    -webkit-filter: drop-shadow(3px 3px 0px rgba(4, 4, 5, 0.41));
+    filter: drop-shadow(3px 3px 0px rgba(4, 4, 5, 0.41));
+    height: 60%;
+}
+
+.editor .menu .line-tools {
+    grid-area: line-tools;
+    background-color: var(--clr11);
+    border-radius: 13px;
+    padding: 15px;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 15px;
+}
+
+
+
+.editor .line-tools button {
+    margin:0px;
+    height:50px;
+    width: 50px;
+    box-shadow: 0px 5px 0px  rgba(4, 4, 5, 0.41);
+}
+
+.line-tools .font-selection {
+    grid-column: span 3;
+    background-color: var(--clr2);
+    height: 50px;
+    border-radius: 13px;
+    box-shadow: 0px 5px 0px  rgba(4, 4, 5, 0.41);
+    padding-inline-start: 20px;
+    color: var(--clr3);
+    font-size: 1.5rem;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+.editor .menu .stickers {
+    grid-area: stickers;
+    margin-bottom: 15px;
+    background-color: var(--clr2);
+    border-radius: 50px;
+}
+
+.editor .menu .download {
+    grid-area: download;
+    background-color: var(--clr8);
+    color: var(--clr2);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.editor .menu .download img{
+    height: 50%;
+    width:10%
+}
+
+.editor .menu h3{
+    font-size: 1.187rem;
+    font-family: poppins;
+    font-weight: 400;
+
+
+}
+
+.editor .menu .save {
+    grid-area: save;
+    background-color: var(--clr10);
+    color: var(--clr2);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
