@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Editor</title>
+</head>
+
+<body onload="editorInit()">
+    <header class="main-header main-content flex ">
+        <div class="logo">Meme Maker</div>
+        <nav class="navbar">
+            <a href="index.html">Browse</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+    <main class="editor flex">
+        <div class="canvas-container">
+            <canvas id="image-canvas" width="526" height="547"></canvas>
+        </div>
+        <div class="menu grid">
+            <input type="text" class="line-bar" placeholder="Click on a Line to Edit the Text!" disabled>
+            <button class="add-line" onclick="onAddLine()"><img src="img/icons/+.png"></button>
+            <button class="delete" onclick="onDeleteLine()"><img src="img/icons/trash.png"></button>
+            <div class="line-tools grid">
+                <button onclick="onChangeFontSize('+')">A+</button>
+                <button onclick="onChangeFontSize('-')">A-</button>
+                <button onclick="onSetLineHeight('top')"><img src="img/icons/top.png"></button>
+                <button onclick="onSetLineHeight('center')"><img src="img/icons/mid2.png"></button>
+                <button onclick="onSetLineHeight('bottom')"><img src="img/icons/bottom.png"></button>
+                <select onchange="onChangeFont(this.value)" class="font-selection">
+                    <option value="impact">IMPACT <img src="img/icons/down-arrow.png"></option>
+                </select>
+                <button>S</button>
+                <button><img src="img/icons/plack.png"></button>
+            </div>
+            <div class="stickers">:)</div>
+            <button class="download flex"><img src="img/icons/download.png"><h3>Download</h3></button>
+            <button class="save" onclick="onSave()"><h3>Save</h3></button>
+        </div>
+    </main>
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/memes.service.js"></script>
+    <script src="js/services/image.service.js"></script>
+    <script src="js/services/gallery.service.js"></script>
+    <script src="js/meme-controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

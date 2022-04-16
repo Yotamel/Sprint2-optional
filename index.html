@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Meme Maker</title>
+</head>
+
+<body onload = "mainInit()">
+    <header class="main-header main-content flex ">
+        <div class="logo">Meme Maker</div>
+        <nav class="navbar">
+            <a href="index.html">Browse</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <nav class="image-nav grid">
+            <input type="text" class="search-bar" placeholder="Search">
+            <div class="tags flex justify-between">
+                <h2>Funny</h2>
+                <h2>Animal</h2>
+                <h2>Mens</h2>
+                <h2>Women</h2>
+                <h2>Comic</h2>
+                <h2>Smile</h2>
+            </div>
+            <button class="expand-btn">More</button>
+        </nav>
+        <section class="image-container grid">
+           
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="logo">Meme Maker</div>
+        <p>
+            &copy; 2022 Meme-Maker.com - All Rights Reserved - Find more free
+            Memes at <strong>AWebsiteThatExistsActually.com</strong>
+        </p>
+    </footer>
+
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/memes.service.js"></script>
+    <script src="js/services/image.service.js"></script>
+    <script src="js/services/gallery.service.js"></script>
+    <script src="js/meme-controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
