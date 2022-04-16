@@ -1,0 +1,26 @@
+header.main-header{
+    border-radius: 37px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 100%;
+    background-image: linear-gradient(-86deg, #33be6d 0%, #0c98b9 100%);
+}
+
+header .logo{
+    margin-inline-start: 75px;
+    font-size: 1.375rem;
+    font-weight: 500;
+    font-family: poppins;
+    flex-grow: 2;
+}
+header .navbar{
+    flex-grow: 1;
+}
+
+header .navbar a{
+    font-size:1.312rem;
+    /* background-color: var(--clr2); */
+    padding-right:21px;
+    padding-left:21px;
+}
